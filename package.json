@@ -1,0 +1,35 @@
+{
+  "name": "aws-team-assignment-manager",
+  "version": "1.0.0",
+  "description": "Github Action built for automatically assigning one member from a github team to issues",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist --license LICENSE.md",
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aws-github-ops/aws-team-assignment-manager.git"
+  },
+  "author": {
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com"
+  },
+  "contributors": [
+    {
+      "name": "Peter Woodworth",
+      "url": "https://github.com/peterwoodworth"
+    }
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1",
+    "typescript": "^4.4.4",
+    "@types/node": "^14.11.2",
+    "gts": "^3.1.0"
+  }
+}
