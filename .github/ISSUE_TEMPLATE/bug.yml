@@ -1,0 +1,28 @@
+name: Bug Report
+description: Report a bug
+labels: [bug, needs-triage]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is the problem?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: |
+        Minimal amount of code that causes the bug (if possible) or a reference.
+    validations:
+      required: true
+
+  - type: textarea
+    id: other
+    attributes:
+      label: Other Info
+      description: |
+        Add any additional information about the issue
+    validations:
+      required: false
